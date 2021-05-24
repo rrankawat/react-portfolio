@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "year": "2015",
+      "designation": "Bachelor of Technology",
+      "org": "Poornima Institute of Engg and Tech, Jaipur",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    },
+    {
+      "year": "2016",
+      "designation": "Associate IT",
+      "org": "MetLife Gosc Pvt Ltd, Jaipur",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    },
+    {
+      "year": "2018",
+      "designation": "Software Developer",
+      "org": "D K Infosolution Pvt Ltd, Noida",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    },
+    {
+      "year": "2019",
+      "designation": "Web Developer",
+      "org": "SGT University, Gurgoan",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    },
+    {
+      "year": "2020",
+      "designation": "Frontend Developer",
+      "org": "Pyramid Cyber Security & Forensic (P) Limited, New Delhi",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    },
+    {
+      "year": "2020",
+      "designation": "Sr. Software Engineer",
+      "org": "GlobalLogic India Pvt Ltd, Noida",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consectetur magnam dolores laudantium iste ratione."
+    }
+  ],
+  "years": [
+    {
+      "year": "Jul, 2015",
+      "isWorkYear": false
+    },
+    {
+      "year": "Sep, 2016",
+      "isWorkYear": true
+    },
+    {
+      "year": "Dec, 2018",
+      "isWorkYear": true
+    },
+    {
+      "year": "Jul, 2019",
+      "isWorkYear": true
+    },
+    {
+      "year": "Feb, 2020",
+      "isWorkYear": true
+    },
+    {
+      "year": "Sep, 2020",
+      "isWorkYear": true
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+@import './config';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './utils';
+
+// Common
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  color: $font-color-active;
+  overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Wrapper
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebar {
+  min-width: $sidebar-width;
+  background-color: $bg-light;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 a {
+    color: $font-color-active;
+  }
+
+  ul {
+    padding-left: 0;
+    margin: 4.5rem 0;
+  }
+
+  li {
+    margin-top: 1.2rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    a {
+      color: $font-color-active;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: $font-color-light;
+      }
+    }
+
+    a.active {
+      color: $font-color-light;
+    }
+  }
+
+  .social-links {
+    font-size: 20px;
+
+    a {
+      color: $font-color-active;
+
+      &:hover {
+        color: $font-color-light;
+      }
+    }
+  }
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+// Home
+.home {
+  padding: 2rem;
+  height: 100vh;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+// Main
+.main {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+// Header
+.header {
+  height: 222px;
+  background-color: $bg-dark;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Footer
+.footer {
+  height: 119px;
+  background-color: $bg-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+
+  a {
+    color: $font-color-hover;
+
+    &:hover {
+      color: $font-color-light;
+    }
+  }
+}
+
+// About Screen
+.timeline {
+  margin-bottom: 100px;
+
+  &-years {
+    text-transform: uppercase;
+    font-style: italic;
+    border-left: 1px solid $bg-dark;
+    position: relative;
+
+    ul {
+      margin-bottom: 0px;
+    }
+
+    li {
+      padding: 1rem 0.5rem;
+    }
+
+    a {
+      font-weight: 400;
+      color: $font-color-hover;
+    }
+
+    a.active {
+      color: $font-color-warn;
+      font-weight: 500;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: 0;
+      margin-left: -13px;
+      z-index: 10;
+      background-color: $font-color-warn;
+      color: #fff;
+      border-radius: 50%;
+      padding: 5px;
+    }
+  }
+
+  &-content {
+    text-align: right;
+    margin-right: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+
+    span {
+      color: $font-color-warn;
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    h3 {
+      margin: 0.5rem 0;
+      color: $font-color-light;
+    }
+
+    p.org {
+      color: $font-color-hover;
+      text-transform: none;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    p.desc {
+      font-weight: 400;
+      margin-top: 0.3rem;
+      text-transform: none;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-content: baseline;
+}
+
+.project-detail {
+  h6 {
+    font-size: 0.95rem;
+  }
+
+  span.text {
+    font-size: 0.95rem;
+    color: $font-color-hover;
+  }
+}
+
+.pagination {
+  height: 134px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $bg-light;
+  color: $font-color-light;
+}
+
+// Skills
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $bg-dark;
+    padding: 2rem 0;
+    transition: all 0.3s ease-in;
+
+    svg {
+      color: $font-color-light;
+    }
+
+    span {
+      margin-top: 0.5rem;
+      color: $font-color-light;
+    }
+  }
+
+  &-item:hover {
+    background-color: $bg-light;
+    border: 1px solid $bg-dark;
+    transition: all 0.3s ease-in;
+
+    svg {
+      color: $font-color-warn;
+    }
+
+    span {
+      color: $font-color-active;
+    }
+  }
+}
+
+// Contact
+.mail {
+  h6 {
+    color: $font-color-hover;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 2rem;
+    color: $font-color-light;
+  }
+}
+
+// Large Screens
+@media screen and (max-width: 992px) {
+  // Skills
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// Medium Screens
+@media screen and (max-width: 768px) {
+  .sidebar {
+    min-width: 0;
+
+    ul,
+    h3,
+    .social-links {
+      display: none;
+    }
+  }
+
+  .sidebar.active {
+    min-width: $sidebar-width;
+
+    ul,
+    h3,
+    .social-links {
+      display: block;
+    }
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    z-index: 9999;
+
+    &-icon {
+      margin: 1rem 1.2rem;
+    }
+  }
+
+  // About
+  .me {
+    margin-bottom: 2.5rem;
+  }
+
+  // Projects
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Skills
+  .skills {
+    max-width: 70%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Small Screens
+@media screen and (max-width: 576px) {
+  .sidebar.active {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 0px;
+  }
+
+  // Projects
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  // Skills
+  .skills {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+// Extra Small Screens
+@media screen and (max-width: 420px) {
+  // Skills
+  .skills {
+    max-width: 80%;
+    grid-template-columns: 1fr;
+  }
+}

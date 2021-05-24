@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "name": "Home",
+      "url": "/home"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Projects",
+      "url": "/projects"
+    },
+    {
+      "name": "Core Skills",
+      "url": "/skills"
+    },
+    {
+      "name": "contact",
+      "url": "/contact"
+    }
+  ]
+}
